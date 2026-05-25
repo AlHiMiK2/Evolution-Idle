@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3de215d6901645a38f8e7cda7a6cf614, type: 3}
+  m_Name: Bear
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.ShopEntityConfig
+  Title: Bear
+  Price: 125000
+  Icon: {fileID: -7872675968770435698, guid: cefd7a38ed155564bac1ba22f0052540, type: 3}
+  PriceMultiplier: 1.23
+  Id: 0
+  MaxCount: 5
+  Prefab: {fileID: 6879100801968443264, guid: acf7fb890ffcdeb4eb7d55420f16a47d, type: 3}
