@@ -1,17 +1,23 @@
-﻿using UnityEngine;
+﻿using DamageNumbersPro;
+using UnityEngine;
 
 namespace _Project.Scripts.UI
 {
     public class UIHandler : MonoBehaviour
     {
-        [SerializeField] private MoneyEffect _moneyEffect;
+        [SerializeField] private DamageNumber _moneyEffect;
+
+        private RectTransform _rect;
         
-        public void CreateMoneyEffect(Vector2 position, int money)
+        private void Start()
+        {
+            _rect = GetComponent<RectTransform>();
+        }
+
+        public void CreateMoneyEffect(Vector3 position, int money)
         {
             Vector2 screenPosition = Camera.main.WorldToScreenPoint(position);
-            var instance = Instantiate(_moneyEffect, screenPosition, Quaternion.identity);
-            instance.transform.SetParent(transform);
-            instance.Init(money);
+            _moneyEffect.Spawn(_rect, screenPosition / _rect.localScale, money);
         }
     }
 }

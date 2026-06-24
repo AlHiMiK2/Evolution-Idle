@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2179341763946209937}
   - component: {fileID: 7573440702762054295}
   - component: {fileID: 1537845642602730791}
+  - component: {fileID: 3971393172266260420}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -114,6 +115,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3971393172266260420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471325156462056111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1625263d85e5d554284989eb9052e863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AllIn1SpriteShaderAssembly::AllIn1SpriteShader.SetAtlasUvs
+  updateEveryFrame: 1
+  useMaterialInstanceIfPossible: 0
 --- !u!1 &1584166743223707177
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +157,7 @@ Transform:
   m_GameObject: {fileID: 1584166743223707177}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.14911, y: -0.12273, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -162,12 +177,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038ea6bf03684287b2438d154ec3f3ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Bear
-  _dieDelay: 3
-  _speed: 0.75
+  _dieDuration: 2
+  _speed: 1
   _stopDistance: 0.5
-  _eatTime: 5
-  _killRewardMultiplier: 5
-  _minKillCount: 1
+  _attackDuration: 4
+  _viewDistance: 5
+  _rewardMultiplier: 15
 --- !u!114 &8662114491014211849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,9 +273,9 @@ Transform:
   m_GameObject: {fileID: 8446284552735716983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.084, y: 0.195, z: 0}
-  m_LocalScale: {x: 1.07, y: 1.07, z: 1.07}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -0.084, y: 0.068, z: 0}
+  m_LocalScale: {x: 1.07, y: 0.535, z: 1.07}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1716771313925374230}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

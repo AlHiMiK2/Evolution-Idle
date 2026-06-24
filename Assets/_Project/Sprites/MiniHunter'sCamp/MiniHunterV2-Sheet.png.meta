@@ -1,0 +1,1042 @@
+fileFormatVersion: 2
+guid: 4b184efe5647f444981cc1d1aa59153a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8090640292290901500
+    second: MiniHunterV2-Sheet_0
+  - first:
+      213: -99519000739792892
+    second: MiniHunterV2-Sheet_1
+  - first:
+      213: 7885990854335813476
+    second: MiniHunterV2-Sheet_2
+  - first:
+      213: -7645190486763196268
+    second: MiniHunterV2-Sheet_3
+  - first:
+      213: -6693239123639384660
+    second: MiniHunterV2-Sheet_4
+  - first:
+      213: 5181714148385305548
+    second: MiniHunterV2-Sheet_5
+  - first:
+      213: -1451877879980685390
+    second: MiniHunterV2-Sheet_6
+  - first:
+      213: -3395447230356263310
+    second: MiniHunterV2-Sheet_7
+  - first:
+      213: 7242769390643355875
+    second: MiniHunterV2-Sheet_8
+  - first:
+      213: -914952997565247280
+    second: MiniHunterV2-Sheet_9
+  - first:
+      213: -8790934595464524677
+    second: MiniHunterV2-Sheet_10
+  - first:
+      213: 1555779634052317992
+    second: MiniHunterV2-Sheet_11
+  - first:
+      213: -5305285948555843038
+    second: MiniHunterV2-Sheet_12
+  - first:
+      213: -5810848515237664467
+    second: MiniHunterV2-Sheet_13
+  - first:
+      213: 1029949634657353133
+    second: MiniHunterV2-Sheet_14
+  - first:
+      213: 1458458284816630247
+    second: MiniHunterV2-Sheet_15
+  - first:
+      213: 2476491481308358062
+    second: MiniHunterV2-Sheet_16
+  - first:
+      213: 3321183801514707019
+    second: MiniHunterV2-Sheet_17
+  - first:
+      213: 9039060373989725213
+    second: MiniHunterV2-Sheet_18
+  - first:
+      213: 82669373142969173
+    second: MiniHunterV2-Sheet_19
+  - first:
+      213: -7758400761441564072
+    second: MiniHunterV2-Sheet_20
+  - first:
+      213: -4976404882282631464
+    second: MiniHunterV2-Sheet_21
+  - first:
+      213: -1126063974680894016
+    second: MiniHunterV2-Sheet_22
+  - first:
+      213: 7427069748043465450
+    second: MiniHunterV2-Sheet_23
+  - first:
+      213: -8805738141051356193
+    second: MiniHunterV2-Sheet_24
+  - first:
+      213: 2289034929375153689
+    second: MiniHunterV2-Sheet_25
+  - first:
+      213: 2667712878650169642
+    second: MiniHunterV2-Sheet_26
+  - first:
+      213: -1475529347131274528
+    second: MiniHunterV2-Sheet_27
+  - first:
+      213: -8828632909320766301
+    second: MiniHunterV2-Sheet_28
+  - first:
+      213: -892213310099275269
+    second: MiniHunterV2-Sheet_29
+  - first:
+      213: 2719780522321953780
+    second: MiniHunterV2-Sheet_30
+  - first:
+      213: 561067535840203965
+    second: MiniHunterV2-Sheet_31
+  - first:
+      213: 2790740705546250943
+    second: MiniHunterV2-Sheet_32
+  - first:
+      213: 4234361866376823056
+    second: MiniHunterV2-Sheet_33
+  - first:
+      213: 3115370559203962917
+    second: MiniHunterV2-Sheet_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 193
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf53673da7ab74070800000000000000
+      internalID: 8090640292290901500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 193
+        width: 15
+        height: 13
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408b0800fff6e9ef0800000000000000
+      internalID: -99519000739792892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 193
+        width: 15
+        height: 13
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4675aa676eaa07d60800000000000000
+      internalID: 7885990854335813476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 193
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490b84c12c3d6e590800000000000000
+      internalID: -7645190486763196268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 161
+        width: 15
+        height: 13
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca54ab6ba76dc13a0800000000000000
+      internalID: -6693239123639384660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 161
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0.42857143, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc33f16609529e740800000000000000
+      internalID: 5181714148385305548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 161
+        width: 14
+        height: 15
+      alignment: 9
+      pivot: {x: 0.42857143, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b70182b2c4e9dbe0800000000000000
+      internalID: -1451877879980685390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 161
+        width: 15
+        height: 13
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ee70ddbb2f0e0d0800000000000000
+      internalID: -3395447230356263310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 161
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0ae5f036c738460800000000000000
+      internalID: 7242769390643355875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 161
+        width: 15
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0d1f9a81f6d43f0800000000000000
+      internalID: -914952997565247280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 129
+        width: 15
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c05a1df83500680800000000000000
+      internalID: -8790934595464524677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 129
+        width: 15
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823c974955d379510800000000000000
+      internalID: 1555779634052317992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 129
+        width: 15
+        height: 13
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a2574d986df56b0800000000000000
+      internalID: -5305285948555843038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 97
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2927a50018bb5fa0800000000000000
+      internalID: -5810848515237664467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 97
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad7b4e5cbd1b4e00800000000000000
+      internalID: 1029949634657353133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 97
+        width: 20
+        height: 14
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e18832351c7d3410800000000000000
+      internalID: 1458458284816630247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 97
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.26086956, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea56aa891e34e5220800000000000000
+      internalID: 2476491481308358062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 97
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48c0133217371e20800000000000000
+      internalID: 3321183801514707019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 97
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1497f6e481317d70800000000000000
+      internalID: 9039060373989725213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 97
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55badfb5b53b52100800000000000000
+      internalID: 82669373142969173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 65
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ac72dfc9f945490800000000000000
+      internalID: -7758400761441564072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 65
+        width: 14
+        height: 19
+      alignment: 9
+      pivot: {x: 0.42857143, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de260d202240fab0800000000000000
+      internalID: -4976404882282631464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 65
+        width: 13
+        height: 17
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5e7caf7ca6f50f0800000000000000
+      internalID: -1126063974680894016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 65
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae24e26e590421760800000000000000
+      internalID: 7427069748043465450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 65
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb7685c0dbbbc580800000000000000
+      internalID: -8805738141051356193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 65
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e0ed3f32944cf10800000000000000
+      internalID: 2289034929375153689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 65
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a299dae9abe950520800000000000000
+      internalID: 2667712878650169642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 65
+        width: 18
+        height: 14
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea839060edd58be0800000000000000
+      internalID: -1475529347131274528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 33
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3acbc9325256a7580800000000000000
+      internalID: -8828632909320766301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 33
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf148abb8b83e93f0800000000000000
+      internalID: -892213310099275269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3c60c99f99eb520800000000000000
+      internalID: 2719780522321953780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1
+        width: 15
+        height: 13
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db452c083ff49c700800000000000000
+      internalID: 561067535840203965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbaae4eb2e3bab620800000000000000
+      internalID: 2790740705546250943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1
+        width: 17
+        height: 10
+      alignment: 9
+      pivot: {x: 0.3529412, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011c9dfcea973ca30800000000000000
+      internalID: 4234361866376823056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHunterV2-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1
+        width: 17
+        height: 8
+      alignment: 9
+      pivot: {x: 0.3529412, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520ff0584050c3b20800000000000000
+      internalID: 3115370559203962917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d02bb197588684848b42cd4b03b7817e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.09375,"y":0.0},"pivotPixels":{"x":6.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      MiniHunterV2-Sheet_0: 8090640292290901500
+      MiniHunterV2-Sheet_1: -99519000739792892
+      MiniHunterV2-Sheet_10: -8790934595464524677
+      MiniHunterV2-Sheet_11: 1555779634052317992
+      MiniHunterV2-Sheet_12: -5305285948555843038
+      MiniHunterV2-Sheet_13: -5810848515237664467
+      MiniHunterV2-Sheet_14: 1029949634657353133
+      MiniHunterV2-Sheet_15: 1458458284816630247
+      MiniHunterV2-Sheet_16: 2476491481308358062
+      MiniHunterV2-Sheet_17: 3321183801514707019
+      MiniHunterV2-Sheet_18: 9039060373989725213
+      MiniHunterV2-Sheet_19: 82669373142969173
+      MiniHunterV2-Sheet_2: 7885990854335813476
+      MiniHunterV2-Sheet_20: -7758400761441564072
+      MiniHunterV2-Sheet_21: -4976404882282631464
+      MiniHunterV2-Sheet_22: -1126063974680894016
+      MiniHunterV2-Sheet_23: 7427069748043465450
+      MiniHunterV2-Sheet_24: -8805738141051356193
+      MiniHunterV2-Sheet_25: 2289034929375153689
+      MiniHunterV2-Sheet_26: 2667712878650169642
+      MiniHunterV2-Sheet_27: -1475529347131274528
+      MiniHunterV2-Sheet_28: -8828632909320766301
+      MiniHunterV2-Sheet_29: -892213310099275269
+      MiniHunterV2-Sheet_3: -7645190486763196268
+      MiniHunterV2-Sheet_30: 2719780522321953780
+      MiniHunterV2-Sheet_31: 561067535840203965
+      MiniHunterV2-Sheet_32: 2790740705546250943
+      MiniHunterV2-Sheet_33: 4234361866376823056
+      MiniHunterV2-Sheet_34: 3115370559203962917
+      MiniHunterV2-Sheet_4: -6693239123639384660
+      MiniHunterV2-Sheet_5: 5181714148385305548
+      MiniHunterV2-Sheet_6: -1451877879980685390
+      MiniHunterV2-Sheet_7: -3395447230356263310
+      MiniHunterV2-Sheet_8: 7242769390643355875
+      MiniHunterV2-Sheet_9: -914952997565247280
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,6 +9,6 @@ namespace _Project.Scripts
         public Sprite Icon;
         public float PriceMultiplier = 1.15f;
         public int Id;
-        public int MaxCount;
+        public bool IsSingle;
     }
 }

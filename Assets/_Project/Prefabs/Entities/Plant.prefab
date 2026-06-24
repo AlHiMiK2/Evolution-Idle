@@ -48,10 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e45788cdf164533a68a46f4539c7583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Plant
-  _dieDelay: 0.75
+  _dieDuration: 1
   _reward: 1
-  _dieReward: 1
-  _rewardRate: 2
 --- !u!114 &-684764031563003311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,9 +139,9 @@ Transform:
   m_GameObject: {fileID: 5901888648698629947}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.09, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.45, z: 0.6}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8952641771487308977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

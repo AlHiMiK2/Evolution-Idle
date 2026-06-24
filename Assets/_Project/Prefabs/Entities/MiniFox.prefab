@@ -26,9 +26,9 @@ Transform:
   m_GameObject: {fileID: 678197016074329189}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.092, y: 0.145, z: 0}
-  m_LocalScale: {x: 0.88, y: 0.88, z: 0.88}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -0.08, y: 0.064, z: 0}
+  m_LocalScale: {x: 0.88, y: 0.44, z: 0.88}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3099536189496865773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -119,7 +119,7 @@ Transform:
   m_GameObject: {fileID: 1222008425959503543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.14911, y: -0.12273, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -139,12 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7190c746bf5f448cbb2c27f5b59c2b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Fox
-  _dieDelay: 1
-  _speed: 1
+  _dieDuration: 1
+  _speed: 1.25
   _stopDistance: 0.35
-  _eatTime: 3
-  _killRewardMultiplier: 10
-  _minKillCount: 2
+  _attackDuration: 2
+  _viewDistance: 6
+  _rewardMultiplier: 5
 --- !u!114 &2612963544932116035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 3130206497581638639}
   - component: {fileID: 5423021503899688588}
   - component: {fileID: 7183527691852166562}
+  - component: {fileID: 3314374728031842141}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -323,3 +324,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3314374728031842141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3597374085498766443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1625263d85e5d554284989eb9052e863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AllIn1SpriteShaderAssembly::AllIn1SpriteShader.SetAtlasUvs
+  updateEveryFrame: 1
+  useMaterialInstanceIfPossible: 0

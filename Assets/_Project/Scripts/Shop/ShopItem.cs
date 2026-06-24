@@ -9,8 +9,10 @@ namespace _Project.Scripts.Shop
     {
         [SerializeField] private TMP_Text _titleText;
         [SerializeField] private TMP_Text _priceText;
-        [SerializeField] private TMP_Text _countText;
         [SerializeField] private Image _image;
+        [SerializeField] private Image _moneyFlagImage;
+        [SerializeField] private Color _enoughMoneyColor;
+        [SerializeField] private Color _notEnoughMoneyColor;
         
         private Button _button;
         private ShopItemConfig _config;
@@ -19,17 +21,24 @@ namespace _Project.Scripts.Shop
         {
             _config = config;
             _titleText.text = _config.Title;
-            
-            float imageWidth = _image.rectTransform.sizeDelta.x;
+
+            float maxWidth = _image.rectTransform.rect.width;
+            float maxHeight = _image.rectTransform.rect.height;
+
             _image.sprite = _config.Icon;
             _image.SetNativeSize();
+
             float originalWidth = _image.rectTransform.rect.width;
             float originalHeight = _image.rectTransform.rect.height;
-            float scaleFactor = imageWidth / originalWidth;
-            _image.rectTransform.sizeDelta = new Vector2(imageWidth, originalHeight * scaleFactor);
+
+            float widthScale = maxWidth / originalWidth;
+            float heightScale = maxHeight / originalHeight;
+
+            float scaleFactor = Mathf.Min(widthScale, heightScale);
+
+            _image.rectTransform.sizeDelta = new Vector2(originalWidth * scaleFactor, originalHeight * scaleFactor);
             
             UpdatePriceText();
-            UpdateCountText();
         }
 
         private void Awake()
@@ -37,9 +46,16 @@ namespace _Project.Scripts.Shop
             _button = GetComponent<Button>();
         }
 
+        private void OnDestroy()
+        {
+            G.Instance.Wallet.MoneyChanged -= UpdateMoneyFlag;
+        }
+
         private void Start()
         {
             _button.onClick.AddListener(ButtonClicked);
+            G.Instance.Wallet.MoneyChanged += UpdateMoneyFlag;
+            UpdateMoneyFlag();
         }
 
         private void ButtonClicked()
@@ -47,18 +63,33 @@ namespace _Project.Scripts.Shop
             if (G.Instance.ShopHandler.TryBuy(_config))
             {
                 UpdatePriceText();
-                UpdateCountText();
             }
         }
 
         private void UpdatePriceText()
         {
-            _priceText.text = G.Instance.ShopHandler.GetItemPrice(_config) + "$";
+            if (_config.IsSingle && G.Instance.ShopHandler.GetItemBuyCount(_config) > 0)
+            {
+                _priceText.SetText("Selled!");
+            }
+            else
+            {
+                int price = G.Instance.ShopHandler.GetItemPrice(_config);
+                string priceText = PolyLabs.ShortScale.ParseInt(price, 3, 10000, true);
+                _priceText.SetText(priceText + "$");
+            }
         }
-        
-        private void UpdateCountText()
+
+        private void UpdateMoneyFlag(int money = 0)
         {
-            _countText.text = G.Instance.ShopHandler.GetItemBuyCount(_config) + "/" + _config.MaxCount;
+            if (G.Instance.Wallet.EnoughMoney(G.Instance.ShopHandler.GetItemPrice(_config)))
+            {
+                _moneyFlagImage.color = _enoughMoneyColor;
+            }
+            else
+            {
+                _moneyFlagImage.color = _notEnoughMoneyColor;
+            }
         }
     }
 }

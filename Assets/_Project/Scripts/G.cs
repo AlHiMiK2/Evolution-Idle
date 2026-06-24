@@ -1,4 +1,5 @@
-﻿using _Project.Scripts.UI;
+﻿using _Project.Scripts.Shop;
+using _Project.Scripts.UI;
 using UnityEngine;
 
 namespace _Project.Scripts
@@ -10,6 +11,7 @@ namespace _Project.Scripts
         public ShopHandler ShopHandler;
         public EntitySpawner Spawner;
         public Wallet Wallet;
+        public UpgradesData UpgradesData; 
         
         public static G Instance { get; private set; }
 
