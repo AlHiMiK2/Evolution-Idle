@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Bunny
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.ShopEntityConfig
   Title: Bunny
-  Price: 100
+  Price: 10
   Icon: {fileID: -3515769611187748645, guid: 1bf7437d3ff9ae0489e8c062df291c37, type: 3}
-  PriceMultiplier: 1
-  Id: 2
+  PriceMultiplier: 1.15
+  Id: 1
+  UnlockLevel: 0
   IsSingle: 0
-  Prefab: {fileID: -2981317437254304709, guid: 3fa9ba4aeca1a0347876ad204333efe4, type: 3}
+  Type: 1

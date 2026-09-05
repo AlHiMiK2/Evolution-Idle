@@ -1,21 +1,27 @@
+using System;
 using System.Collections.Generic;
 using _Project.Scripts;
 using _Project.Scripts.Shop;
-using _Project.Scripts.UI;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class ShopHandler : MonoBehaviour
 {
-    private List<int> _buyHistory = new List<int>();
+    [SerializeField] private Shop _shop;
     
+    private int[] _buys;
+
+    private void Awake()
+    {
+        _buys = new int[_shop.ItemsDB.Configs.Length];
+    }
+
     public bool TryBuy(ShopItemConfig config)
     {
         if (config.IsSingle && GetItemBuyCount(config) > 0) return false;
-        int price = GetItemPrice(config);
+        double price = GetItemPrice(config);
         if (G.Instance.Wallet.TryTakeMoney(price))
         {
-            _buyHistory.Add(config.Id);
+            _buys[config.Id]++;
             HandleBuy(config);
             return true;
         }
@@ -23,34 +29,47 @@ public class ShopHandler : MonoBehaviour
         return false;
     }
 
-    public int GetItemPrice(ShopItemConfig config)
+    public double GetItemPrice(ShopItemConfig config)
     {
-        return (int)(config.Price * Mathf.Pow(config.PriceMultiplier, GetItemBuyCount(config)));
+        return config.Price * Mathf.Pow(config.PriceMultiplier, GetItemBuyCount(config));
     }
     
     public int GetItemBuyCount(ShopItemConfig config)
     {
-        int id = config.Id;
-        int count = 0;
-
-        foreach (var buy in _buyHistory)
-        {
-            if (buy == id)
-                count++;
-        }
-        
-        return count;
+        return _buys[config.Id];
     }
     
     private void HandleBuy(ShopItemConfig config)
     {
+        UpgradesData data = G.Instance.UpgradesData;
         if (config is ShopEntityConfig entityConfig)
         {
-            ShopEventHandler.OnEntityBought(entityConfig);
+            switch (entityConfig.Type)
+            {
+                case Entities.Plant:
+                    data.PlantSpawnCount++;
+                    break;
+                case Entities.Bunny:
+                    data.BunnySpawnCount++;
+                    break;
+                case Entities.Fox:
+                    data.FoxSpawnCount++;
+                    break;
+                case Entities.Wolf:
+                    data.WolfSpawnCount++;
+                    break;
+                case Entities.Bear:
+                    data.BearSpawnCount++;
+                    break;
+                case Entities.Hunter:
+                    data.HunterSpawnCount++;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
         else if (config is ShopPercConfig percConfig)
         {
-            UpgradesData data = G.Instance.UpgradesData;
             switch (percConfig.Type)
             {
                 case PercType.PlantReward:
@@ -62,6 +81,9 @@ public class ShopHandler : MonoBehaviour
                 case PercType.FoxReward:
                     data.FoxRewardLevel++;
                     break;
+                case PercType.WolfReward:
+                    data.WolfRewardLevel++;
+                    break;
                 case PercType.BearReward:
                     data.BearRewardLevel++;
                     break;
@@ -72,6 +94,9 @@ public class ShopHandler : MonoBehaviour
                     break;
                 case PercType.FoxSpeed:
                     data.FoxSpeedLevel++;
+                    break;
+                case PercType.WolfSpeed:
+                    data.WolfSpeedLevel++;
                     break;
                 case PercType.BearSpeed:
                     data.BearSpeedLevel++;

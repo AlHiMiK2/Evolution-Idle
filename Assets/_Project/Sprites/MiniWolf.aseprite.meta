@@ -2,7 +2,47 @@ fileFormatVersion: 2
 guid: 119994faebc13f941baff568a4dd4dfb
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: attack
+    second: {fileID: 7400000, guid: 2265058a6585e24469990557e79c981f, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: attack2
+    second: {fileID: 7400000, guid: 451c75d355575424fa2d16239e4f73b3, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: death
+    second: {fileID: 7400000, guid: 6e971348ce1f0164691966a684fe3688, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: hit
+    second: {fileID: 7400000, guid: 26dca123245062e4f9aca5ec268b5d30, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: howl
+    second: {fileID: 7400000, guid: 7ae9224447255ba42a64c8b22c743d9a, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: idle
+    second: {fileID: 7400000, guid: c262d785ba6f41a48b8b24ae351f723d, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: jump
+    second: {fileID: 7400000, guid: b091df8560108ff4eab9026599c882ce, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: walk
+    second: {fileID: 7400000, guid: c07e8e319ea50d34d83da8ee1fb395b8, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -102,7 +142,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639146320344977440
+  platformSettingsDirtyTick: 639190574623842039
   textureAssetName: 
   singleSpriteImportData:
   - name: 

@@ -15,7 +15,7 @@ namespace _Project.Scripts
         [SerializeField] private bool _colorFirstLetter = true;
 
         private float _time;
-        private int _money;
+        private double _money;
         private TMP_TextInfo _textInfo;
         private List<Vector3> _originalVertices = new List<Vector3>();
         private List<Color32> _originalColors = new List<Color32>();
@@ -30,15 +30,21 @@ namespace _Project.Scripts
             _wallet.MoneyChanged -= OnMoneyChanged;
         }
         
-        private void OnMoneyChanged(int money)
+        private void OnMoneyChanged(double money, double moneyDifference)
         {
             _money = money;
-            _moneyText.SetText("$" + PolyLabs.ShortScale.ParseInt(_money, 3, 10000, true));
+            _moneyText.SetText("$" + PolyLabs.ShortScale.ParseDouble(_money, 2, 10000, true));
             _originalVertices.Clear();
             _originalColors.Clear();
             UpdateOriginalData();
         }
-        
+
+        private void Update()
+        {
+            _time += Time.deltaTime;
+            AnimateText();
+        }
+
         private void UpdateOriginalData()
         {
             _moneyText.ForceMeshUpdate();

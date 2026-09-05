@@ -15,7 +15,8 @@ MonoBehaviour:
   Title: Bear
   Price: 10000
   Icon: {fileID: -7872675968770435698, guid: cefd7a38ed155564bac1ba22f0052540, type: 3}
-  PriceMultiplier: 1
+  PriceMultiplier: 1.15
   Id: 4
+  UnlockLevel: 3
   IsSingle: 0
-  Prefab: {fileID: 6879100801968443264, guid: acf7fb890ffcdeb4eb7d55420f16a47d, type: 3}
+  Type: 3

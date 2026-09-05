@@ -16,6 +16,7 @@ MonoBehaviour:
   Price: 20000
   Icon: {fileID: -2861008389017700705, guid: cefd7a38ed155564bac1ba22f0052540, type: 3}
   PriceMultiplier: 1.15
-  Id: 8
+  Id: 11
+  UnlockLevel: 3
   IsSingle: 0
-  Type: 3
+  Type: 4

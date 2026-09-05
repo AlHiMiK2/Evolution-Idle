@@ -181,8 +181,8 @@ MonoBehaviour:
   _speed: 1
   _stopDistance: 0.5
   _attackDuration: 4
-  _viewDistance: 5
-  _rewardMultiplier: 15
+  _targetTypes: 0200000005000000
+  _rewardMultiplier: 2
 --- !u!114 &8662114491014211849
 MonoBehaviour:
   m_ObjectHideFlags: 0

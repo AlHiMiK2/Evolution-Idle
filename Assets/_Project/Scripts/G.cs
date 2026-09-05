@@ -9,15 +9,19 @@ namespace _Project.Scripts
         public UIHandler UIHandler;
         public EntityContainer EntityContainer;
         public ShopHandler ShopHandler;
-        public EntitySpawner Spawner;
         public Wallet Wallet;
         public UpgradesData UpgradesData; 
+        public Zone Zone;
+        public Map Map;
+        public EntitySpawner[] Spawners;
+        public LevelHandler LevelHandler;
         
         public static G Instance { get; private set; }
 
-        private void Awake()
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        private static void Initialize()
         {
-            Instance = this;
+            Instance = FindAnyObjectByType<G>();
         }
     }
 }

@@ -1,9 +1,10 @@
-﻿using DG.Tweening;
+﻿using _Project.Scripts.States;
+using DG.Tweening;
 using UnityEngine;
 
 namespace _Project.Scripts.Animations
 {
-    [RequireComponent(typeof(Animal))]
+    [RequireComponent(typeof(Entity))]
     public class AnimalAnimation : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer _renderer;
@@ -12,8 +13,9 @@ namespace _Project.Scripts.Animations
         [SerializeField] private Ease _ease;
         [SerializeField] private Animator _animator;
         [SerializeField] private SpriteRenderer _shadow;
+        [SerializeField] private EntityData _data;
+        [SerializeField] private DeadState _deadState;
 
-        private Animal _animal;
         private Material _material;
         private bool _isHitEffect;
         private bool _isDead;
@@ -27,44 +29,42 @@ namespace _Project.Scripts.Animations
         
         private void Awake()
         {
-            _animal = GetComponent<Animal>();
             _material = _renderer.material;
         }
         
         private void OnEnable()
         {
-            transform.DOScale(1f, 0.2f).From(0f);
-        }
-
-        private void Start()
-        {
-            _animal.Died += OnDied;
+            _deadState.Died += OnDied;
             OnSpawned();
         }
         
-        private void OnDestroy()
+        private void OnDisable()
         {
-            _animal.Died -= OnDied;
+            _deadState.Died -= OnDied;
         }
 
         private void Update()
         {
-            if (_animal.KillReward > 0f)
+            if (_data.KillReward > 0)
             {
                 _material.SetFloat(ShineLocation, Mathf.Sin(Time.time * 2f) / 2 + 0.5f);
                 _material.EnableKeyword("SHINE_ON");
             }
-            if(_animal.IsDead) return;
-            _animator.SetBool(IsMove, _animal.Direction.sqrMagnitude > 0f);
-            _animator.SetBool(IsAttack, _animal.IsAttacking);
-            _animator.SetBool(IsHit, _animal.Owner);
-            _renderer.flipX = _animal.Direction.x < 0;
+            else
+            {
+                _material.DisableKeyword("SHINE_ON");
+            }
+            if(_data.IsDead) return;
+            _animator.SetBool(IsMove, _data.Direction.sqrMagnitude > 0f);
+            _animator.SetBool(IsAttack, _data.IsAttacking);
+            _animator.SetBool(IsHit, _data.Owner);
+            _renderer.flipX = _data.Direction.x < 0;
 
-            if (_animal.Owner && !_isHitEffect)
+            if (_data.Owner && !_isHitEffect)
             {
                 StartHitEffect();
             }
-            else if (!_animal.Owner && _isHitEffect)
+            else if (!_data.Owner && _isHitEffect)
             {
                 StopHitEffect();
             }
@@ -92,6 +92,7 @@ namespace _Project.Scripts.Animations
             _renderer.transform.localPosition = Vector3.zero;
             _renderer.transform.localScale = Vector3.one;
             _animator.SetBool(IsDie, false);
+            transform.DOScale(1f, 0.2f).From(0f);
             _shadow.DOFade(0.5f, 0);
             StopHitEffect();
         }
@@ -99,11 +100,11 @@ namespace _Project.Scripts.Animations
         private void OnDied()
         {
             _animator.SetBool(IsDie, true);
-            _shadow.DOFade(0, _animal.DieDuration).SetEase(_ease);
-            _renderer.transform.DOMoveY(_offsetY, _animal.DieDuration).SetEase(_ease).SetRelative(true);
-            _renderer.transform.DOScale(_dieScale, _animal.DieDuration).SetEase(_ease);
-            _material.DOFloat(1f, HitEffectBlend, _animal.DieDuration).SetEase(_ease);
-            _renderer.DOFade(0, _animal.DieDuration * 0.5f).SetEase(_ease).SetDelay(_animal.DieDuration * 0.5f);
+            _shadow.DOFade(0, _data.DieDuration).SetEase(_ease);
+            _renderer.transform.DOMoveY(_offsetY, _data.DieDuration).SetEase(_ease).SetRelative(true);
+            _renderer.transform.DOScale(_dieScale, _data.DieDuration).SetEase(_ease);
+            _material.DOFloat(1f, HitEffectBlend, _data.DieDuration).SetEase(_ease);
+            _renderer.DOFade(0, _data.DieDuration * 0.5f).SetEase(_ease).SetDelay(_data.DieDuration * 0.5f);
         }
     }
 }

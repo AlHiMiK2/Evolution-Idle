@@ -8,6 +8,7 @@ namespace _Project.Scripts.Animations
     {
         [SerializeField] private SpriteRenderer _renderer;
         [SerializeField] private Animator _animator;
+        [SerializeField] private EntityData _data;
 
         private Hunter _hunter;
 
@@ -26,9 +27,9 @@ namespace _Project.Scripts.Animations
 
         private void Update()
         {
-            _animator.SetBool(IsMove, _hunter.IsMoving);
-            _animator.SetBool(IsAttack, _hunter.IsAttacking);
-            _renderer.flipX = _hunter.Direction.x < 0;
+            _animator.SetBool(IsMove, _data.Direction.sqrMagnitude > 0);
+            _animator.SetBool(IsAttack, _data.IsAttacking);
+            _renderer.flipX = _data.Direction.x < 0;
         }
     }
 }

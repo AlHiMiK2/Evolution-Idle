@@ -1,5 +1,262 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3442003431932671652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5320309734183308836}
+  - component: {fileID: 1218132499211483285}
+  - component: {fileID: 17850430718725361}
+  - component: {fileID: 7760140843447077960}
+  - component: {fileID: 7689810871689852410}
+  - component: {fileID: 3200432446476639277}
+  - component: {fileID: 7813492884199291014}
+  - component: {fileID: 1532629742266744929}
+  m_Layer: 0
+  m_Name: Transitions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5320309734183308836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442003431932671652}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8228665704600962925}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1218132499211483285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442003431932671652}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a86df9953a4a49a830a3ec9b7d6056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Transitions.BunnyHasTargetTransition
+  _targetState: {fileID: 2745229559623753627}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &17850430718725361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442003431932671652}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86df47cd1d0b43c5a98b8efb94778fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Transitions.BunnyNoHasTargetTransition
+  _targetState: {fileID: 1601208293821081449}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &7760140843447077960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442003431932671652}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83e06ff53394e3db483b412d084dc94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Transitions.BunnyAttackDistanceTransition
+  _targetState: {fileID: 810285009479876045}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &7689810871689852410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442003431932671652}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7a6def3d1445aea459ccd9fdc1a189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Transitions.AttackedTransition
+  _targetState: {fileID: 2465117167572693658}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &3200432446476639277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442003431932671652}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a899bcaaaa943739cb4927708881860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Transitions.ReleaseTransition
+  _targetState: {fileID: 1601208293821081449}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &7813492884199291014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442003431932671652}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f077be46269b45adae542960fb6f19f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Transitions.DieTransition
+  _targetState: {fileID: 8548683226990572248}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &1532629742266744929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442003431932671652}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8701bda817c494d84cc73cf9814b51b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Transitions.NoDeadTransition
+  _targetState: {fileID: 1601208293821081449}
+  _data: {fileID: 4032902239192045916}
+--- !u!1 &3475637596339200044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6242903953414949396}
+  - component: {fileID: 1601208293821081449}
+  - component: {fileID: 2745229559623753627}
+  - component: {fileID: 810285009479876045}
+  - component: {fileID: 2465117167572693658}
+  - component: {fileID: 8548683226990572248}
+  m_Layer: 0
+  m_Name: States
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6242903953414949396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475637596339200044}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8228665704600962925}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1601208293821081449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475637596339200044}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e604e025f60a4ea882ac067299b4ab83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.States.BunnyFindTargetState
+  _transitions:
+  - {fileID: 1218132499211483285}
+  - {fileID: 7813492884199291014}
+  _self: {fileID: -2981317437254304709}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &2745229559623753627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475637596339200044}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c79be750594a6eb81298b3f8082151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.States.BunnyMoveState
+  _transitions:
+  - {fileID: 7689810871689852410}
+  - {fileID: 7760140843447077960}
+  - {fileID: 7813492884199291014}
+  _self: {fileID: -2981317437254304709}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &810285009479876045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475637596339200044}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26aba28b54344acb193383590a6635c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.States.BunnyAttackState
+  _transitions:
+  - {fileID: 17850430718725361}
+  - {fileID: 7689810871689852410}
+  - {fileID: 7813492884199291014}
+  _self: {fileID: -2981317437254304709}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &2465117167572693658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475637596339200044}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9005ee3cb0804b60a8c730f97dd87c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.States.BunnyAttackedState
+  _transitions:
+  - {fileID: 3200432446476639277}
+  - {fileID: 7813492884199291014}
+  _data: {fileID: 4032902239192045916}
+--- !u!114 &8548683226990572248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475637596339200044}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01915d4c7ee14769a05794cf4a92351e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.States.DeadState
+  _transitions:
+  - {fileID: 1532629742266744929}
+  _self: {fileID: -2981317437254304709}
+  _data: {fileID: 4032902239192045916}
 --- !u!1 &4731278456885592314
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,8 +396,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8228665704600962925}
   - component: {fileID: -2981317437254304709}
-  - component: {fileID: -3522645141920669658}
+  - component: {fileID: 4032902239192045916}
+  - component: {fileID: 4242390682183057685}
   - component: {fileID: 6630799171442032226}
+  - component: {fileID: 9010259452872108959}
   m_Layer: 0
   m_Name: MiniBunny
   m_TagString: Untagged
@@ -163,6 +422,8 @@ Transform:
   m_Children:
   - {fileID: 1491982028805831194}
   - {fileID: 3948696048343220913}
+  - {fileID: 5320309734183308836}
+  - {fileID: 6242903953414949396}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-2981317437254304709
@@ -177,12 +438,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce4598e00c8543629e96c2208d4b0b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Bunny
-  _dieDuration: 1
-  _speed: 0.5
-  _stopDistance: 0.25
-  _attackDuration: 1
+  _data: {fileID: 4032902239192045916}
   _rewardMultiplier: 3
---- !u!114 &-3522645141920669658
+--- !u!114 &4032902239192045916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,7 +449,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 5772644949266613530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84db74f92ad24aeb84be00510adc75ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e7bd17e3dc245e9a5a137fcc22cb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.BunnyData
+  Speed: 1
+  SpeedMultiplier: 1
+  AttackDistance: 0.1
+  AttackDuration: 2
+  DieDuration: 1
+  KillReward: 0
+  IsAttacking: 0
+  IsDead: 0
+  Owner: {fileID: 0}
+  Target: {fileID: 0}
+  Direction: {x: 0, y: 0}
+  TargetPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &4242390682183057685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5772644949266613530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94108c3f4efe4e75812f469e6e5dc135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Animations.BunnyAnimation
   _renderer: {fileID: 1159453759065894885}
@@ -200,6 +482,11 @@ MonoBehaviour:
   _ease: 27
   _animator: {fileID: 2493138279937860634}
   _shadow: {fileID: 7158216925788026402}
+  _moveState: {fileID: 2745229559623753627}
+  _attackState: {fileID: 810285009479876045}
+  _attackedState: {fileID: 2465117167572693658}
+  _data: {fileID: 4032902239192045916}
+  _deadState: {fileID: 8548683226990572248}
 --- !u!61 &6630799171442032226
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -246,6 +533,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.75, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &9010259452872108959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5772644949266613530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd28e65e4256b040bb571d24bc33268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StateMachine
+  _firstState: {fileID: 1601208293821081449}
 --- !u!1 &7719712670735515878
 GameObject:
   m_ObjectHideFlags: 0

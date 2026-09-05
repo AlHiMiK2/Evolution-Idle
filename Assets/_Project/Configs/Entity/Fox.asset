@@ -15,7 +15,8 @@ MonoBehaviour:
   Title: Fox
   Price: 10000
   Icon: {fileID: 5055910229047124030, guid: 97646775de041e5499326b1270925caa, type: 3}
-  PriceMultiplier: 1
-  Id: 3
+  PriceMultiplier: 1.15
+  Id: 2
+  UnlockLevel: 1
   IsSingle: 0
-  Prefab: {fileID: -7536053693119985037, guid: 0c45cb131bfa1b149baf369ff32c12b1, type: 3}
+  Type: 2

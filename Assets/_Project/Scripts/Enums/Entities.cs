@@ -6,6 +6,7 @@
         Bunny,
         Fox,
         Bear,
-        Hunter
+        Hunter,
+        Wolf
     }
 }

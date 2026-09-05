@@ -1,42 +1,34 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using UnityEngine;
 
 namespace _Project.Scripts
 {
     public abstract class Entity : MonoBehaviour
     {
-        [SerializeField] private float _dieDuration;
+        [SerializeField] private EntityData _data;
 
-        public int Price {get; private set;}
-        public bool IsDead { get; protected set; }
-        public float DieDuration => _dieDuration;
-        public Entity Owner { get; protected set; }
-
-        public event UnityAction Died;
+        public EntityData Data => _data;
         
-        public void OnSpawned(int price)
+        public bool CanRespawned => _data.IsDead && !gameObject.activeSelf;
+        
+        public void OnSpawned()
         {
-            Price = price;
-            IsDead = false;
-            OnReleased();
+            _data.IsDead = false;
+            gameObject.SetActive(true);
         }
         
-        public abstract int GetReward();
-
         public void Die()
         {
-            if (IsDead) return;
-            IsDead = true;
-            G.Instance.Wallet.AddMoney(Price);
-            G.Instance.Wallet.AddMoneyWithEffect(GetReward(), transform.position);
-            G.Instance.EntityContainer.RemoveEntity(this);
-            Died?.Invoke();
-            Destroy(gameObject, _dieDuration);
+            _data.IsDead = true;
         }
 
-        public abstract void OnAttacked(Entity owner);
+        public void OnAttacked(Entity owner)
+        {
+            _data.Owner = owner;
+        }
 
-        public abstract void OnReleased();
+        public void OnReleased()
+        {
+            _data.Owner = null;
+        }
     }
 }

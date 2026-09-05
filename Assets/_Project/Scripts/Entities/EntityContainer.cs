@@ -1,129 +1,70 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace _Project.Scripts
 {
     public class EntityContainer : MonoBehaviour
     {
-        private List<Plant> _plants = new List<Plant>();
-        private List<Bunny> _bunnies = new List<Bunny>();
-        private List<Fox> _foxies = new List<Fox>();
-        private List<Bear> _bears = new List<Bear>();
+        private List<Entity> _plants = new List<Entity>();
+        private List<Entity> _bunnies = new List<Entity>();
+        private List<Entity> _foxies = new List<Entity>();
+        private List<Entity> _wolfies = new List<Entity>();
+        private List<Entity> _bears = new List<Entity>();
+        private List<Entity> _hunters = new List<Entity>();
 
-        public void AddEntity(Entity entity)
+        private List<Entity> GetListByType(Entities type)
         {
-            if (entity is Plant plant)
+            switch (type)
             {
-                _plants.Add(plant);
-            }
-            else if (entity is Bunny animal1)
-            {
-                _bunnies.Add(animal1);
-            }
-            else if (entity is Fox animal2)
-            {
-                _foxies.Add(animal2);
-            }
-            else if (entity is Bear animal3)
-            {
-                _bears.Add(animal3);
+                case Entities.Plant:
+                    return _plants;
+                case Entities.Bunny:
+                    return _bunnies;
+                case Entities.Fox:
+                    return _foxies;
+                case Entities.Wolf:
+                    return _wolfies;
+                case Entities.Bear:
+                    return _bears;
+                case Entities.Hunter:
+                    return _hunters;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
         }
-
-        public void RemoveEntity(Entity entity)
+        
+        public void Add(Entity entity, Entities type)
         {
-            if (entity is Plant plant)
-            {
-                _plants.Remove(plant);
-            }
-            else if (entity is Bunny animal1)
-            {
-                _bunnies.Remove(animal1);
-            }
-            else if (entity is Fox animal2)
-            {
-                _foxies.Remove(animal2);
-            }
-            else if (entity is Bear animal3)
-            {
-                _bears.Remove(animal3);
-            }
+            GetListByType(type).Add(entity);
         }
 
-        public Entity GetNearestPlant(Vector2 position)
+        public void Remove(Entity entity, Entities type)
         {
-            Plant nearest = null;
+            GetListByType(type).Remove(entity);
+        }
+
+        public Entity GetNearest(Vector2 position, Entities type)
+        {
+            List<Entity> list = GetListByType(type);
+            Entity nearest = null;
             float distance = Mathf.Infinity;
             
-            foreach (var plant in _plants)
+            foreach (var entity in list)
             {
-                if (plant.Owner || plant.IsDead) continue;
-                float newDistance = Vector2.Distance(position, plant.transform.position);
+                if (entity.Data.Owner || entity.Data.IsDead) continue;
+                float newDistance = Vector2.Distance(position, entity.transform.position);
                 if (newDistance < distance)
                 {
-                    nearest = plant;
+                    nearest = entity;
                     distance = newDistance;
                 }
             }
             
             return nearest;
         }
-        
-        public Bunny GetNearestBunny(Vector2 position, float maxDistance)
-        {
-            Bunny nearest = null;
-            float distance = Mathf.Infinity;
-            
-            foreach (var bunny in _bunnies)
-            {
-                if (bunny.Owner || bunny.IsDead) continue;
-                float newDistance = Vector2.Distance(position, bunny.transform.position);
-                if (newDistance < distance && newDistance <= maxDistance)
-                {
-                    nearest = bunny;
-                    distance = newDistance;
-                }
-            }
-            
-            return nearest;
-        }
-        
-        public Fox GetNearestFox(Vector2 position, float maxDistance)
-        {
-            Fox nearest = null;
-            float distance = Mathf.Infinity;
-            
-            foreach (var fox in _foxies)
-            {
-                if (fox.Owner || fox.IsDead) continue;
-                float newDistance = Vector2.Distance(position, fox.transform.position);
-                if (newDistance < distance && newDistance <= maxDistance)
-                {
-                    nearest = fox;
-                    distance = newDistance;
-                }
-            }
-            
-            return nearest;
-        }
-        
-        public Bear GetNearestBear(Vector2 position, float maxDistance)
-        {
-            Bear nearest = null;
-            float distance = Mathf.Infinity;
-            
-            foreach (var bear in _bears)
-            {
-                if (bear.Owner || bear.IsDead) continue;
-                float newDistance = Vector2.Distance(position, bear.transform.position);
-                if (newDistance < distance && newDistance <= maxDistance)
-                {
-                    nearest = bear;
-                    distance = newDistance;
-                }
-            }
-            
-            return nearest;
-        }
+
+        public int GetLiveCount(Entities type) => GetListByType(type).FindAll(x => !x.CanRespawned).Count;
+        public Entity GetDead(Entities type) => GetListByType(type).Find(x => x.CanRespawned);
     }
 }

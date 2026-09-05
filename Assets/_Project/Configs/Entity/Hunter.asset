@@ -15,7 +15,8 @@ MonoBehaviour:
   Title: Hunter
   Price: 10000
   Icon: {fileID: 8090640292290901500, guid: 4b184efe5647f444981cc1d1aa59153a, type: 3}
-  PriceMultiplier: 1
-  Id: 0
+  PriceMultiplier: 1.15
+  Id: 5
+  UnlockLevel: 4
   IsSingle: 0
-  Prefab: {fileID: 6445575165370091412, guid: b12ff693b95555f42933e2fd0c25f6dd, type: 3}
+  Type: 4

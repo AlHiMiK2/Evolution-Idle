@@ -14,10 +14,10 @@ namespace _Project.Scripts.UI
             _rect = GetComponent<RectTransform>();
         }
 
-        public void CreateMoneyEffect(Vector3 position, int money)
+        public void CreateMoneyEffect(Vector3 position, double money)
         {
             Vector2 screenPosition = Camera.main.WorldToScreenPoint(position);
-            _moneyEffect.Spawn(_rect, screenPosition / _rect.localScale, money);
+            _moneyEffect.Spawn(_rect, screenPosition / _rect.localScale, (float)money);
         }
     }
 }
